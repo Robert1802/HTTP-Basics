@@ -44,49 +44,49 @@ by the media type given in the Content-Type header. The source server MUST creat
 before returning status code 201. If the action cannot be performed immediately,
 the server MUST respond with a 202 (Accepted) response instead.
 
-//ACCEPTED
+// ACCEPTED
 Accepted is a successful answer. It is used when the request has been accepted for processing,
 but processing is not yet complete. The request may or may not eventually be executed,
 as it can be negated when processing is performed. There is no way to resend a status code
 of an asynchronous operation like this.
 
-//NO_CONTENT
+// NO_CONTENT
 No content is a successful response. It is used when the request was successful,
 but there is no new information to send back in the payload response body.
 Metadata in response header fields refers to the target resource and its representation
 selected after applying the requested action.
 
-//BAD_REQUEST
+// BAD_REQUEST
 Bad Request is an error response from the client. Used when the request cannot be understood by the server
 due to malformed syntax. The client MUST NOT repeat the request without modification.
 
-//UNAUTHORIZED
+// UNAUTHORIZED
 Unauthorized is an error response from the client. It is used when the request has not been applied
 because it does not have valid authentication credentials for the target resource.
 
-//FORBIDDEN
+// FORBIDDEN
 Forbidden is an error response from the client. It is used when the request has not been applied
 because it does not have valid authentication credentials for the target resource.
 
-//NOT_FOUND
+// NOT_FOUND
 Not found is an error response from the client. Used when the origin server could not find a current representation
 to the target resource or is unwilling to reveal that one exists.
 
-//INTERNAL_SERVER_ERROR
+// INTERNAL_SERVER_ERROR
 Internal Server Error is a server error response. Used when the server encountered an unexpected condition
 that prevented him from fulfilling the request.
 
-//BAD_GATEWAY
+// BAD_GATEWAY
 Bad Gateway is a server error response. It is used when the server, while acting as a gateway or proxy,
 received an invalid response from the upstream server it accessed while trying to fulfill the request.
 
-//SERVICE_UNAVAILABLE
+// SERVICE_UNAVAILABLE
 Service unavailable is a server error response. It is used when the server cannot currently handle the request
 due to a temporary overload or scheduled maintenance, which will likely be relieved after some delay.
 The server MUST send a Retry-After field to suggest an appropriate amount of time to the client
 to retry the request.
 
-//GATEWAY_TIMEOUT
+// GATEWAY_TIMEOUT
 Gateway Timeout is a server error response. It is used when the server, while acting as a gateway or proxy,
 did not receive a timely response from the upstream server it needed to access to complete the request.
 
@@ -118,49 +118,49 @@ pelo tipo de mídia fornecido no cabeçalho Content-Type. O servidor de origem D
 antes de retornar o código de status 201. Se a ação não puder ser executada imediatamente,
 o servidor DEVE responder com a resposta 202 (Aceito) em vez disso.
 
-//ACCEPTED
+// ACCEPTED
 Aceito é uma resposta bem sucedida. É usada quando a solicitação foi aceita para processamento,
 mas o processamento ainda não foi concluído. A solicitação pode ou não ser eventualmente executada,
 pois pode ser negada quando o processamento é realizado. Não há meios para reenviar um código de status
 de uma operação assíncrona como esta.
 
-//NO_CONTENT
+// NO_CONTENT
 Sem conteúdo é uma resposta bem sucedida. É usada quando a solicitação foi bem sucedida,
 mas não há novas informações para enviar de volta no corpo da resposta de carga útil.
 Os metadados nos campos de cabeçalho da resposta se referem ao recurso de destino e sua representação
 selecionada após a aplicação da ação solicitada.
 
-//BAD_REQUEST
+// BAD_REQUEST
 Bad Request é uma resposta de erro do cliente. É usada quando a solicitação não pode ser entendida pelo servidor
 devido a sintaxe mal formada. O cliente NÃO DEVE repetir a solicitação sem modificações.
 
-//UNAUTHORIZED
+// UNAUTHORIZED
 Não autorizado é uma resposta de erro do cliente. É usada quando a solicitação não foi aplicada
 porque não possui credenciais de autenticação válidas para o recurso de destino.
 
-//FORBIDDEN
+// FORBIDDEN
 Proibido é uma resposta de erro do cliente. É usada quando a solicitação não foi aplicada
 porque não possui credenciais de autenticação válidas para o recurso de destino.
 
-//NOT_FOUND
+// NOT_FOUND
 Não encontrado é uma resposta de erro do cliente. É usada quando o servidor de origem não encontrou uma representação atual
 para o recurso de destino ou não está disposto a revelar que um existe.
 
-//INTERNAL_SERVER_ERROR
+// INTERNAL_SERVER_ERROR
 Erro interno do servidor é uma resposta de erro do servidor. É usada quando o servidor encontrou uma condição inesperada
 que o impediu de cumprir a solicitação.
 
-//BAD_GATEWAY
+// BAD_GATEWAY
 Bad Gateway é uma resposta de erro do servidor. É usada quando o servidor, enquanto atua como gateway ou proxy,
 recebeu uma resposta inválida do servidor upstream que ele acessou ao tentar cumprir a solicitação.
 
-//SERVICE_UNAVAILABLE
+// SERVICE_UNAVAILABLE
 Serviço indisponível é uma resposta de erro do servidor. É usada quando o servidor não pode atualmente lidar com a solicitação
 devido a uma sobrecarga temporária ou manutenção programada, que provavelmente será aliviada após algum atraso.
 O servidor DEVE enviar um campo Retry-After para sugerir uma quantidade apropriada de tempo para o cliente
 para tentar novamente a solicitação.
 
-//GATEWAY_TIMEOUT
+// GATEWAY_TIMEOUT
 Gateway Timeout é uma resposta de erro do servidor. É usada quando o servidor, enquanto atua como gateway ou proxy,
 não recebeu uma resposta oportuna do servidor upstream que ele precisava acessar para concluir a solicitação.
 
